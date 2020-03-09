@@ -1,0 +1,21 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  header {
+    background-color: #1bb28b;
+    font-size: 0.18864rem;
+    text-align: center;
+    line-height: 0.45rem;
+    color: #fff;
+  }
+
+  main {
+    flex: 1; // 剩余空间全部给 main
+  }
+
+  nav {
+    height: 0.45rem;
+    background-color: #f6f6f6;
+  }
+}
