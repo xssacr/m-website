@@ -1,23 +1,25 @@
+import Router from './router/router.js'
 class App {
   constructor() {
     console.log('app...');
     this.init();
+    this.initEvent();
   }
 
-  async init() {
-    let rs = await this.getUsername();
-    console.log(rs);
+  init() {
+
   }
 
-  getUsername() {
-    // Promise 是解决回调地狱的问题. Promise 一旦发送数据中途不能取消
-    // XMLHttpRequest 中途可以取消
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve('gp18')
-      }, 2000);
+  initEvent() {
+    // 找到所有的 li 绑定事件
+    $("#nav li").on('click', function () {  // 这里不能写成箭头函数
+      $(this).addClass('active').siblings().removeClass('active');
+      let url = $(this).attr('data-url');
+      Router.go(url);
     })
   }
+
+
 }
 
 new App();

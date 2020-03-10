@@ -6,7 +6,6 @@ const webpackStream = require("webpack-stream");
 const path = require('path');
 
 function copyHtml() {
-  // todo...
   return src('./src/views/**/*.html')
     .pipe(dest('./dev'));
 }
@@ -16,6 +15,11 @@ function comileCss() {
     .pipe(sass().on('error', sass.logError))  // 编译 scss
     .pipe(concat('app.css'))  // 文件合并
     .pipe(dest('./dev/'))
+}
+
+function copyLibs() {
+  return src('./src/libs/**/*.*')
+    .pipe(dest('./dev/libs/'));
 }
 
 function comileJS() {
@@ -51,6 +55,8 @@ function comileJS() {
     .pipe(dest('./dev/'))
 }
 
+
+
 function watchFile() {
   watch('./src/style/**/*.scss', (cb) => {
     comileCss();  // 重新编译
@@ -79,4 +85,4 @@ function startServer() {
     }));
 }
 
-exports.default = series(copyHtml, comileCss, comileJS, startServer, watchFile)
+exports.default = series(copyHtml, copyLibs, comileCss, comileJS, startServer, watchFile)

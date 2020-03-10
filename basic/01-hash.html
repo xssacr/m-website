@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="add">add Hash</button>
+  <button id="update">update Hash</button>
+
+  <script>
+
+    document.querySelector('#add').addEventListener('click', () => {
+      location.hash = 'abc'
+    })
+
+    document.querySelector('#update').addEventListener('click', () => {
+      location.hash = 'efg'
+    })
+
+    window.addEventListener("hashchange", () => {
+      console.log(location.hash);
+    })
+
+  </script>
+</body>
+
+</html>

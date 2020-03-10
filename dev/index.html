@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./app.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1681660_o1timmt113s.css">
 </head>
 
 <body>
@@ -13,12 +14,27 @@
   <div class="app">
 
     <header>拉钩网</header>
-    <main></main>
-    <nav></nav>
+    <main id="main"></main>
+    <nav id="nav">
+      <ul>
+        <li class="active" data-url="position">
+          <i class="iconfont icon-home"></i>
+          职位
+        </li>
+        <li data-url="search">
+          <i class="iconfont icon-search"></i>
+          搜索
+        </li>
+        <li data-url="profile">
+          <i class="iconfont icon-users"></i>
+          我的
+        </li>
+      </ul>
+    </nav>
 
   </div>
 
-
+  <script src="../libs/zepto.min.js"></script>
   <script src="./all.js"></script>
 </body>
 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="add">add history</button>
+  <button id="update">update history</button>
+
+  <script>
+    document.querySelector('#add').addEventListener('click', () => {
+      let id = Math.floor(Math.random() * 10000);
+      history.pushState({ id }, '', id);
+    })
+
+    document.querySelector('#update').addEventListener('click', () => {
+      let id = Math.floor(Math.random() * 10000);
+      history.replaceState({ id }, '', id);  // 更新了当前的记录
+    })
+
+    /* 
+      history 只有在浏览器前进后退的时候才能使用
+    */
+    window.addEventListener("popstate", () => {
+      console.log(history.state);
+    })
+
+  </script>
+</body>
+
+</html>

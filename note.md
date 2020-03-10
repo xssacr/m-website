@@ -73,6 +73,8 @@ UI 标注图
 4. 在根目录下创建 gulpfile.js 
 5. 安装 gulp-webserver 插件  `yarn add gulp-webserver -D`  搭建 server 环境
 6. 安装 gulp-sass 插件 `yarn add node-sass gulp-sass -D`  node-sass 是 gulp-sass 的前提条件，想要使用 gulp-sass 就必须安装 node-sass
+7. `gulp-concat` 文件合并插件
+
 
 webpack 实现babel 
 
@@ -82,3 +84,10 @@ webpack 实现babel
 
 ### 制作页面
 - rem + 百分比布局  来解决移动端适配问题
+移动端适配: vw 怎么计算
+
+```js
+  // 视图的宽度 375px === 100vw
+  // 1vw === 3.75px
+  // 1px === 26.667vw
+```
