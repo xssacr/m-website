@@ -1,0 +1,65 @@
+@import "./mixin.scss";
+
+.custom {
+  display: flex;
+  padding: 0.07rem;
+  align-items: center;
+  button {
+    width: 0.8rem;
+    height: 0.3rem;
+    color: #00b38a;
+    background-color: #f5f5f5;
+    outline: none;
+    border: 0;
+    border-radius: 0.15rem;
+    font-size: 0.14rem;
+  }
+  span {
+    flex: 1;
+    color: #555;
+  }
+}
+
+.position-list {
+  .item {
+    display: flex;
+    @include border_1px(#e8e8e8);
+    padding: 0.1rem;
+    img {
+      width: 0.6rem;
+      height: 0.6rem;
+      margin: 0.08rem;
+    }
+    .desc {
+      flex: 1;
+      line-height: 0.26rem;
+      h2 {
+        font-size: 0.16768rem;
+        color: #333;
+      }
+      .pos {
+        display: flex;
+        .name {
+          flex: 1;
+          width: 0px; // flex 的坑
+          color: #333;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          font-size: 14px;
+        }
+        .salary {
+          width: 0.8rem;
+          text-align: center;
+          color: #00b38a;
+          font-size: 0.16rem;
+        }
+      }
+
+      .time {
+        color: #888;
+        font-size: 0.12rem;
+      }
+    }
+  }
+}

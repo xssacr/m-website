@@ -1,0 +1,56 @@
+@mixin border_1px($color) {
+  position: relative;
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+    &::before {
+      content: "";
+      display: block;
+      background-color: $color;
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      transform: scaleY(0.75); // 缩放
+      left: 0;
+      top: 0;
+    }
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    &::before {
+      content: "";
+      display: block;
+      background-color: $color;
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      transform: scaleY(0.5); // 缩放
+      left: 0;
+      top: 0;
+    }
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    &::before {
+      content: "";
+      display: block;
+      background-color: $color;
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      transform: scaleY(0.333); // 缩放
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+@mixin before_content($scaleY) {
+  content: "";
+  display: block;
+  background-color: $color;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  transform: scaleY($scaleY); // 缩放
+  left: 0;
+  top: 0;
+}

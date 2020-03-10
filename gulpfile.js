@@ -48,6 +48,10 @@ function comileJS() {
                 plugins: ['@babel/plugin-transform-runtime']  // 提取公共的 runtime
               }
             }
+          },
+          {
+            test: /\.html$/,
+            loader: 'string-loader'
           }
         ]
       }
@@ -70,6 +74,7 @@ function watchFile() {
 
   watch('./src/views/**/*.html', (cb) => {
     copyHtml();
+    comileJS();  // 重新编译 js,因为 js 也用到了 html
     cb();
   })
 }

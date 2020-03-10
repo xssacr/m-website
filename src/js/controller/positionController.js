@@ -1,7 +1,9 @@
+import positionTpl from '../../views/position/position.html'
 class PositionController {
   // 单一职责
   render() {
-    $("main").html('position html')
+    console.log(positionTpl);
+    $("main").html(positionTpl)
   }
 }
 

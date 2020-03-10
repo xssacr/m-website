@@ -1,6 +1,9 @@
 html {
   font-size: 26.667vw; }
 
+body {
+  font-size: 0.14rem; }
+
 html,
 body {
   padding: 0;
@@ -9,6 +12,8 @@ body {
 
 nav,
 ul,
+h2,
+p,
 li {
   padding: 0;
   margin: 0; }
@@ -63,3 +68,87 @@ li {
   -moz-osx-font-smoothing: grayscale;
 }
  */
+
+
+.custom {
+  display: flex;
+  padding: 0.07rem;
+  align-items: center; }
+  .custom button {
+    width: 0.8rem;
+    height: 0.3rem;
+    color: #00b38a;
+    background-color: #f5f5f5;
+    outline: none;
+    border: 0;
+    border-radius: 0.15rem;
+    font-size: 0.14rem; }
+  .custom span {
+    flex: 1;
+    color: #555; }
+
+.position-list .item {
+  display: flex;
+  position: relative;
+  padding: 0.1rem; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+    .position-list .item::before {
+      content: "";
+      display: block;
+      background-color: #e8e8e8;
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      transform: scaleY(0.75);
+      left: 0;
+      top: 0; } }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    .position-list .item::before {
+      content: "";
+      display: block;
+      background-color: #e8e8e8;
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      transform: scaleY(0.5);
+      left: 0;
+      top: 0; } }
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    .position-list .item::before {
+      content: "";
+      display: block;
+      background-color: #e8e8e8;
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      transform: scaleY(0.333);
+      left: 0;
+      top: 0; } }
+  .position-list .item img {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: 0.08rem; }
+  .position-list .item .desc {
+    flex: 1;
+    line-height: 0.26rem; }
+    .position-list .item .desc h2 {
+      font-size: 0.16768rem;
+      color: #333; }
+    .position-list .item .desc .pos {
+      display: flex; }
+      .position-list .item .desc .pos .name {
+        flex: 1;
+        width: 0px;
+        color: #333;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 14px; }
+      .position-list .item .desc .pos .salary {
+        width: 0.8rem;
+        text-align: center;
+        color: #00b38a;
+        font-size: 0.16rem; }
+    .position-list .item .desc .time {
+      color: #888;
+      font-size: 0.12rem; }

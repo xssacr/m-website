@@ -5032,6 +5032,11 @@ stream-shift@^1.0.0:
   resolved "https://registry.npm.taobao.org/stream-shift/download/stream-shift-1.0.1.tgz#d7088281559ab2778424279b0877da3c392d5a3d"
   integrity sha1-1wiCgVWasneEJCebCHfaPDktWj0=
 
+string-loader@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npm.taobao.org/string-loader/download/string-loader-0.0.1.tgz#496f3cccc990213e0dd5411499f9ac6a6a6f2ff8"
+  integrity sha1-SW88zMmQIT4N1UEUmfmsampvL/g=
+
 string-width@^1.0.1, string-width@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/string-width/download/string-width-1.0.2.tgz#118bdf5b8cdc51a2a7e70d211e07e2b0b9b107d3"

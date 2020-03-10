@@ -7,7 +7,7 @@ class App {
   }
 
   init() {
-
+    Router.go('position')
   }
 
   initEvent() {

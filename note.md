@@ -91,3 +91,51 @@ webpack 实现babel
   // 1vw === 3.75px
   // 1px === 26.667vw
 ```
+
+### 职位管理模块
+
+1. 安装 string-loader 用来读取 html 文件
+
+### 1像素问题
+iphone 6/7/8 
+
+问题的原因: 不同的设备像素比(dpr)导致的.  
+解决: 可以使用 媒体查询 
+
+### 前后端合作模式
+
+**前后端 并行开发**
+  
+  前后端共同确定接口,形成接口文档 <br>
+  前端需要自己做模拟数据
+    安装 yarn global add json-server
+    启动 json-server 服务
+
+    ```
+      Options:
+    --config, -c               Path to config file    [默认值: "json-server.json"]
+    --port, -p                 Set port                             [默认值: 3000]
+    --host, -H                 Set host                      [默认值: "localhost"]
+    --watch, -w                Watch file(s)                                [布尔]
+    --routes, -r               Path to routes file
+    --middlewares, -m          Paths to middleware files                    [数组]
+    --static, -s               Set static files directory
+    --read-only, --ro          Allow only GET requests                      [布尔]
+    --no-cors, --nc            Disable Cross-Origin Resource Sharing        [布尔]
+    --no-gzip, --ng            Disable GZIP Content-Encoding                [布尔]
+    --snapshots, -S            Set snapshots directory               [默认值: "."]
+    --delay, -d                Add delay to responses (ms)
+    --id, -i                   Set database id property (e.g. _id)  [默认值: "id"]
+    --foreignKeySuffix, --fks  Set foreign key suffix (e.g. _id as in post_id)
+                                                                    [默认值: "Id"]
+    --quiet, -q                Suppress log messages from output            [布尔]
+    --help, -h                 显示帮助信息                                 [布尔]
+    --version, -v              显示版本号                                   [布尔]
+
+    示例：
+      json-server db.json
+      json-server file.js
+      json-server http://example.com/db.json
+    ```
+
+**后端已经开发完成**

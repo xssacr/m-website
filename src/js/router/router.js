@@ -1,7 +1,7 @@
 import positon from '../controller/positionController.js'
 class Router {
   go(path) {
-    positon.render();
+    if (path === 'position') positon.render();
   }
 }
 
