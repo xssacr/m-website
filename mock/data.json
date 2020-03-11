@@ -1,7 +1,19 @@
 {
   "posts": [
     {
-      "id": 1,
+      "positionId": 1,
+      "title": "aaa",
+      "author": "typicode",
+      "name": "hello "
+    },
+    {
+      "positionId": 2,
+      "title": "bbb",
+      "author": "typicode",
+      "name": "hello "
+    },
+    {
+      "positionId": 3,
       "title": "json-server",
       "author": "typicode",
       "name": "hello "

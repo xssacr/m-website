@@ -1,9 +1,10 @@
-const { src, series, dest, watch } = require("gulp");
+const { src, series, dest, watch, parallel } = require("gulp");
 const sass = require("gulp-sass");
 const gulpServer = require("gulp-webserver");
 const concat = require("gulp-concat");
 const webpackStream = require("webpack-stream");
 const path = require('path');
+const proxy = require('http-proxy-middleware');
 
 function copyHtml() {
   return src('./src/views/**/*.html')
@@ -22,6 +23,11 @@ function copyLibs() {
     .pipe(dest('./dev/libs/'));
 }
 
+function copyImages() {
+  return src('./src/images/**/*.*')
+    .pipe(dest('./dev/images/'));
+}
+
 function comileJS() {
   return src('./src/js/app.js')
     .pipe(webpackStream({
@@ -34,6 +40,7 @@ function comileJS() {
         path: path.resolve(__dirname, './dev/'),
         filename: 'all.js'  // 输出后的文件名
       },
+      devtool: 'inline-source-map',
       module: {
         rules: [
           {
@@ -86,8 +93,18 @@ function startServer() {
       host: '127.0.0.1',
       livereload: true,  // 是否支持热更新
       // directoryListing: true,  // 是否打开目录
-      open: true  // 是否自动打开
+      open: true,  // 是否自动打开
+      middleware: [
+        proxy('/api', {
+          target: 'http://127.0.0.1:3303',  // 代理的目标地址
+          changeOrigin: true,  // 是否支持跨域
+          // 路径重写
+          pathRewrite: {
+            '^/api': ''
+          }
+        })
+      ]
     }));
 }
 
-exports.default = series(copyHtml, copyLibs, comileCss, comileJS, startServer, watchFile)
+exports.default = series(parallel(copyHtml, copyLibs, copyImages), comileCss, comileJS, startServer, watchFile)

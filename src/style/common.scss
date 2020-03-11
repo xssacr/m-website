@@ -12,6 +12,7 @@
 
   main {
     flex: 1; // 剩余空间全部给 main
+    overflow: hidden;
   }
 
   nav {
@@ -38,6 +39,20 @@
           color: #1bb28b;
         }
       }
+    }
+  }
+
+  #loading {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    // background-color: #f79;
+    img {
+      width: 0.4rem;
     }
   }
 }

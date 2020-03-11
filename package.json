@@ -4,7 +4,9 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mock": "json-server ./mock/positionlist.json -w -p 3303 -i positionId -s ./mock/images/",
+    "data": "json-server ./mock/mock.js -r ./mock/routes.json -p 8800"
   },
   "keywords": [],
   "author": "",
@@ -19,8 +21,14 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
     "gulp-webserver": "^0.9.1",
+    "http-proxy-middleware": "0.20.0",
     "node-sass": "^4.13.1",
     "string-loader": "^0.0.1",
     "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "@better-scroll/core": "^2.0.0-beta.6",
+    "@better-scroll/pull-down": "^2.0.0-beta.6",
+    "@better-scroll/pull-up": "^2.0.0-beta.6"
   }
 }

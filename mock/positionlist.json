@@ -1,0 +1,229 @@
+{
+  "positionlist": [
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 3360604,
+      "positionName": "网红电商运营总监",
+      "city": "广州",
+      "createTime": "今天 09:46",
+      "salary": "25k-40k",
+      "companyId": 90336,
+      "companyLogo": "image1/M00/43/DB/Cgo8PFXS_fyAdTfOAADHosN6r9M501.jpg?cc=0.7276548997033387",
+      "companyName": "新娱加传媒",
+      "companyFullName": "广州市新娱加娱乐传媒文化有限公司"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 4573690,
+      "positionName": "游戏策划",
+      "city": "杭州",
+      "createTime": "今天 09:46",
+      "salary": "6k-9k",
+      "companyId": 50193,
+      "companyLogo": "i/image/M00/0A/28/CgqKkVbT55uAKpNqAAA_KP2lqyI826.png",
+      "companyName": "杭州绝地科技股份有限公司",
+      "companyFullName": "杭州绝地科技股份有限公司"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 2809944,
+      "positionName": "客服专员",
+      "city": "北京",
+      "createTime": "今天 09:46",
+      "salary": "6k-8k",
+      "companyId": 21878,
+      "companyLogo": "i/image/M00/91/99/Cgp3O1iYFnOAIm0hAABQwAUx-eI502.jpg",
+      "companyName": "分子互动",
+      "companyFullName": "北京分子互动文化传播有限公司"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 2941595,
+      "positionName": "衍生品开发设计师",
+      "city": "北京",
+      "createTime": "今天 09:46",
+      "salary": "8k-15k",
+      "companyId": 21878,
+      "companyLogo": "i/image/M00/91/99/Cgp3O1iYFnOAIm0hAABQwAUx-eI502.jpg",
+      "companyName": "分子互动",
+      "companyFullName": "北京分子互动文化传播有限公司"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 4559220,
+      "positionName": "电竞赛事造星运营（世界知名手游）",
+      "city": "上海",
+      "createTime": "今天 09:45",
+      "salary": "8k-15k",
+      "companyId": 136248,
+      "companyLogo": "i/image/M00/BF/3E/Cgp3O1jPkCWAM47KAADX8tjahB8130.jpg",
+      "companyName": "E-jade",
+      "companyFullName": "长沙易杰德信息技术有限公司"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 2859459,
+      "positionName": "前端开发实习生",
+      "city": "北京",
+      "createTime": "今天 09:45",
+      "salary": "4k-7k",
+      "companyId": 87029,
+      "companyLogo": "i/image3/M00/1C/0B/CgpOIFqBNM6APb2vAAAcGNAutJY191.jpg",
+      "companyName": "有鱼智能科技",
+      "companyFullName": "深圳市有鱼智能科技有限公司"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 2860902,
+      "positionName": "产品实习生",
+      "city": "北京",
+      "createTime": "今天 09:45",
+      "salary": "4k-7k",
+      "companyId": 87029,
+      "companyLogo": "i/image3/M00/1C/0B/CgpOIFqBNM6APb2vAAAcGNAutJY191.jpg",
+      "companyName": "有鱼智能科技",
+      "companyFullName": "深圳市有鱼智能科技有限公司"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 4482344,
+      "positionName": "数据分析岗（业务方向）",
+      "city": "广州",
+      "createTime": "今天 09:45",
+      "salary": "15k-25k",
+      "companyId": 76433,
+      "companyLogo": "i/image/M00/93/5B/CgqKkViZi2uAaEVqAAEYVIrGiWU065.png",
+      "companyName": "广发银行信用卡中心",
+      "companyFullName": "广发银行股份有限公司信用卡中心"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 2770791,
+      "positionName": "海淘内容编辑",
+      "city": "上海",
+      "createTime": "今天 09:45",
+      "salary": "5k-10k",
+      "companyId": 58109,
+      "companyLogo": "image1/M00/26/66/CgYXBlVVTK2AUP4sAABg2gmvuIY042.png",
+      "companyName": "55海淘",
+      "companyFullName": "五五海淘（上海）科技股份有限公司"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 3336214,
+      "positionName": "[实习]前端开发工程师",
+      "city": "北京",
+      "createTime": "今天 09:45",
+      "salary": "5k-7k",
+      "companyId": 82822,
+      "companyLogo": "image1/M00/38/39/CgYXBlWk7-WASY7tAABbJiKp9VI363.jpg?cc=0.9693956833798438",
+      "companyName": "天天乐学",
+      "companyFullName": "北京天天乐学教育科技有限公司"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 4608541,
+      "positionName": "DevOps工程师",
+      "city": "深圳",
+      "createTime": "今天 09:44",
+      "salary": "15k-30k",
+      "companyId": 291710,
+      "companyLogo": "i/image2/M01/AB/13/CgoB5lvs5FuAKoq6AAAdW6DttLU476.png",
+      "companyName": "深圳市新类型科技有限公司",
+      "companyFullName": "深圳市新类型科技有限公司"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 4608987,
+      "positionName": "Node.js开发工程师(金融）",
+      "city": "深圳",
+      "createTime": "今天 09:44",
+      "salary": "10k-20k",
+      "companyId": 291710,
+      "companyLogo": "i/image2/M01/AB/13/CgoB5lvs5FuAKoq6AAAdW6DttLU476.png",
+      "companyName": "深圳市新类型科技有限公司",
+      "companyFullName": "深圳市新类型科技有限公司"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 3302954,
+      "positionName": "Windows系统架构师",
+      "city": "上海",
+      "createTime": "今天 09:44",
+      "salary": "25k-35k",
+      "companyId": 54555,
+      "companyLogo": "i/image/M00/00/30/Cgp3O1YxptSAE28wAAClIV6BArc504.jpg",
+      "companyName": "格尔软件",
+      "companyFullName": "格尔软件股份有限公司"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 3310370,
+      "positionName": "Java/Web架构师",
+      "city": "上海",
+      "createTime": "今天 09:44",
+      "salary": "25k-35k",
+      "companyId": 54555,
+      "companyLogo": "i/image/M00/00/30/Cgp3O1YxptSAE28wAAClIV6BArc504.jpg",
+      "companyName": "格尔软件",
+      "companyFullName": "格尔软件股份有限公司"
+    },
+    {
+      "logger": {
+        "traceCapable": true,
+        "name": "com.lagou.entity.mobile.MobilePosition"
+      },
+      "positionId": 4582919,
+      "positionName": "新媒体内容编辑（政务项目）",
+      "city": "广州",
+      "createTime": "今天 09:44",
+      "salary": "6k-10k",
+      "companyId": 50681,
+      "companyLogo": "image1/M00/22/8A/Cgo8PFVB6ySAD3VkAACttzl-aLI489.png",
+      "companyName": "腾讯•大粤网",
+      "companyFullName": "广东腾南网络信息科技有限公司"
+    }
+  ]
+}

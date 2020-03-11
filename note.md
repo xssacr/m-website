@@ -138,4 +138,13 @@ iphone 6/7/8
       json-server http://example.com/db.json
     ```
 
+#### 配置代理
+`yarn add http-proxy-middleware@0.20.0 -D`
+
+### better-scroll 
+
+better-scroll 生效的要求:
+ 1. 唯一的子节点
+ 2. 子节点必须超出包裹(wrap)的高度
+
 **后端已经开发完成**
