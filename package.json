@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "mock": "json-server ./mock/positionlist.json -w -p 3303 -i positionId -s ./mock/images/",
-    "data": "json-server ./mock/mock.js -r ./mock/routes.json -p 8800"
+    "data": "json-server ./mock/mock.js -r ./mock/routes.json -p 8800",
+    "dev": "gulp -f gulpfile.dev.js",
+    "build": "gulp -f gulpfile.pro.js"
   },
   "keywords": [],
   "author": "",

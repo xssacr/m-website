@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./app.css">
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1681660_o1timmt113s.css">
+  <link href="../libs/swiper.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,7 +15,15 @@
   <div class="app">
 
     <header>拉钩网</header>
-    <main id="main"></main>
+    <main id="main">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" id="swiper-position">slide 1</div>
+          <div class="swiper-slide" id="swiper-search">slide 2</div>
+          <div class="swiper-slide" id="swiper-profile">slide 3</div>
+        </div>
+      </div>
+    </main>
     <nav id="nav">
       <ul>
         <li class="active" data-url="position">
@@ -36,10 +45,10 @@
       <img src="./images/loadding.gif" alt="">
     </div>
   </div>
-
   <script src="../libs/template-web.js"></script>
   <script src="../libs/zepto.min.js"></script>
-  <script src="./all.js"></script>
+  <script src="../libs/swiper.min.js"></script>
+  <script src="./main.js"></script>
 </body>
 
 </html>

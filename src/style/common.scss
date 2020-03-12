@@ -13,6 +13,9 @@
   main {
     flex: 1; // 剩余空间全部给 main
     overflow: hidden;
+    .swiper-container{
+      height: 100%;
+    }
   }
 
   nav {

@@ -21,11 +21,23 @@ class PositionController {
     this.datalist = [];
 
     this.isMore = true;  // 是否有更多
+
+    this.initEvent();
+  }
+
+  // 事件
+  initEvent() {
+    $("#main").on('click', '.item', function () {
+      console.log($(this));
+      let positionId = $(this).attr('data-id');
+      location.href = '/detail.html?' + positionId;
+    })
   }
 
 
   // 请求数据
   async getList() {
+    console.log('加载数据...');
     $('#loading').show();
     let url = `/api/positionlist?_page=${this.pageNo}&_limit=${this.pageSize}`;
     let result = await get(url);
@@ -38,7 +50,8 @@ class PositionController {
 
   // 单一职责
   async render() {
-    $("main").html(positionTpl);
+    console.log($('#swiper-position').html(positionTpl));
+    $("#swiper-position").html(positionTpl);
     await this.getList();
 
     this.scroll = new BScroll('#position-wrapper', {
@@ -47,14 +60,17 @@ class PositionController {
         threshold: 50,  // 下拉到什么位置刷新
         stop: 0  // 回弹停留的距离
       },
+      click: true,
       pullUpLoad: true  // 是否上拉
     })
     // 下拉刷新
     this.scroll.on('pullingDown', async () => {
       this.pageNo = 1;  // 下拉的时候把 页数设置为1
       this.datalist = [];
+      this.isMore = true;
       await this.getList();
       this.scroll.finishPullDown();
+      this.scroll.refresh();
     })
 
     // 监听实时滚动
@@ -74,6 +90,7 @@ class PositionController {
           $('.more').hide();
           this.scroll.refresh();
         }, 2000)
+        // return;
       }
       this.pageNo++;
       await this.getList();
